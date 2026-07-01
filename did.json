@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://w3id.org/security/multikey/v1"
+        "https://www.w3.org/ns/did/v1"
     ],
     "id": "did:web:opsecid.github.io",
     "authentication": [],
