@@ -1,12 +1,29 @@
 {
-    "@context": [
-        "https://www.w3.org/ns/did/v1"
-    ],
-    "id": "did:web:opsecid.github.io",
-    "authentication": [],
-    "assertionMethod": [],
-    "verificationMethod": [],
-    "alsoKnownAs": [
-        "did:webvh:QmVJ5nUYb9iugnUz4yDfbe8UFbhmnsvS2EAzSpSfPScRAn:opsecid.github.io"
-    ]
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/multikey/v1",
+    "https://identity.foundation/.well-known/did-configuration/v1"
+  ],
+  "id": "did:web:opsecid.github.io",
+  "alsoKnownAs": [
+    "did:webvh:Qmb3KLhAKJ9wZx1gTPzcPfCxviRkiEJ4RGdHNviaedGu3i:opsecid.github.io"
+  ],
+  "assertionMethod": [
+    "did:web:opsecid.github.io#z6MkrMFWC9deRanhuAAu8K6WLpp9D7BWLty1j1VyFLworUDc"
+  ],
+  "verificationMethod": [
+    {
+      "id": "did:web:opsecid.github.io#z6MkrMFWC9deRanhuAAu8K6WLpp9D7BWLty1j1VyFLworUDc",
+      "controller": "did:web:opsecid.github.io",
+      "type": "Multikey",
+      "publicKeyMultibase": "z6MkrMFWC9deRanhuAAu8K6WLpp9D7BWLty1j1VyFLworUDc"
+    }
+  ],
+  "service": [
+    {
+      "id": "did:web:opsecid.github.io#domain",
+      "type": "LinkedDomains",
+      "serviceEndpoint": "https://opsecid.github.io/"
+    }
+  ]
 }
